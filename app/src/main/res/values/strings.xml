@@ -2,6 +2,7 @@
     <string name="app_name">MusicPlayer</string>
     <string name="logo_name">MusicPlayer</string>
     <string name="song_divider"> - </string>
+    <string name="back_button">Back to Playlist</string>
 
     <!-- Labels -->
     <string name="main_screen">Playlist</string>

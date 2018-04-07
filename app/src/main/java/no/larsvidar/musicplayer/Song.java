@@ -7,15 +7,18 @@ public class Song {
 
     private String mSongName;   //variable for name of song
     private String mArtist;     //variable for name of artist
-    private String mUrl;        //variable for url to song file.
+    private String mSource;     //variable for source of song file.
+    private String mAlbumArt;   //Variable for source of AlbumArt image.
 
 
-    public Song(String songName, String artist, String url) {
+    public Song(String songName, String artist, String source, String albumArt) {
         mSongName = songName;
         mArtist = artist;
-        mUrl = url;
+        mSource = source;
+        mAlbumArt = albumArt;
     }
 
+    /*** GETTERS ***/
     public String getSongName() {
         return mSongName;
     }
@@ -24,7 +27,11 @@ public class Song {
         return mArtist;
     }
 
-    public String getUrl() {
-        return mUrl;
+    public String getSource() {
+        return mSource;
+    }
+
+    public String getAlbumArt() {
+        return mAlbumArt;
     }
 }

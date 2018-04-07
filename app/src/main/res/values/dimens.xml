@@ -7,15 +7,23 @@
     <dimen name="songlist_padding">16dp</dimen>
     <dimen name="song_divider_margin">8dp</dimen>
     <dimen name="thumb_right_margin">16dp</dimen>
+    <dimen name="thumb_height">48dp</dimen>
 
     <!-- Play screen dimens -->
+    <dimen name="playscreen_padding">16dp</dimen>
     <dimen name="albumart_height">224dp</dimen>
     <dimen name="albumart_bottom_margin">16dp</dimen>
     <dimen name="songinfo_margin_bottom">32dp</dimen>
     <dimen name="player_control_height">56dp</dimen>
+    <dimen name="player_logo_bottom_margin">32dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_height">48dp</dimen>
 
     <!-- Font sizes -->
     <dimen name="text_logo">40sp</dimen>
     <dimen name="text_song_list">16sp</dimen>
     <dimen name="text_songinfo">24sp</dimen>
+    <dimen name="text_back_button">12sp</dimen>
+
 </resources>
