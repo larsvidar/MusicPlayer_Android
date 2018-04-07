@@ -1,26 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    android:background="@color/backgroundColor"
     android:orientation="vertical"
-    android:background="@color/backgroundColor">
+    tools:context=".MainActivity">
 
     <!-- Logo -->
     <TextView
+        style="@style/logo_style"
         android:layout_height="wrap_content"
-        android:text="@string/logo_name"
-        style="@style/logo_style" />
+        android:text="@string/logo_name" />
 
     <!-- List view to be populated by playlist -->
     <ListView
+        android:id="@+id/list"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/list"
         android:divider="@color/colorPrimaryDark"
-        android:dividerHeight="1dp"/>
+        android:dividerHeight="1dp" />
 
 
 </LinearLayout>

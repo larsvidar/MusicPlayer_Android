@@ -21,7 +21,7 @@ class SongAdapter extends ArrayAdapter<Song> {
 
         //Checking if view is inflated.
         View listItemView = convertView;
-        if(listItemView == null) {
+        if (listItemView == null) {
             listItemView = LayoutInflater.from(getContext()).inflate(
                     R.layout.song_list, parent, false);
         }

@@ -4,13 +4,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
+import android.view.View.OnClickListener;
 import android.widget.Button;
 import android.widget.ImageView;
-import android.view.View.OnClickListener;
 import android.widget.TextView;
 
-// Importing the songs ArrayList from MainActivity
 import static no.larsvidar.musicplayer.MainActivity.songs;
+
+// Importing the songs ArrayList from MainActivity
 
 public class PlayScreen extends AppCompatActivity {
     private String mTitle;
@@ -87,6 +88,7 @@ public class PlayScreen extends AppCompatActivity {
             }
         });
 
+        //Setting onClickListener for navigateBackButton.
         final Button navigateBackButton = findViewById(R.id.navigate_back_button);
         navigateBackButton.setOnClickListener(new OnClickListener() {
             @Override
@@ -102,7 +104,8 @@ public class PlayScreen extends AppCompatActivity {
 
     /**
      * Method for displaying current song info.
-     * @param title TextView for displaying song title.
+     *
+     * @param title  TextView for displaying song title.
      * @param artist TextView for displaying artist.
      */
     private void setSongInfo(TextView title, TextView artist, ImageView albumArt) {

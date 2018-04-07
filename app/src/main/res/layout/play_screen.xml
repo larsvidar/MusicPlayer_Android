@@ -1,76 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/playscreen_padding"
     android:paddingLeft="@dimen/playscreen_padding"
-    android:paddingRight="@dimen/playscreen_padding"
-    android:paddingBottom="@dimen/playscreen_padding" >
+    android:paddingRight="@dimen/playscreen_padding">
 
     <Button
         android:id="@+id/navigate_back_button"
         android:layout_width="wrap_content"
         android:layout_height="@dimen/button_height"
+        android:alpha="@dimen/navigate_back_button_alpha"
         android:background="@color/backgroundColor"
         android:text="@string/back_button"
         android:textColor="@color/lightText"
-        android:textSize="12sp"
-        android:alpha="0.5"/>
+        android:textSize="@dimen/text_back_button" />
 
     <!-- Logo -->
     <TextView
-        android:text="@string/logo_name"
-        android:gravity="top"
-        android:textAlignment="center"
+        style="@style/logo_style"
         android:layout_marginBottom="@dimen/player_logo_bottom_margin"
-        style="@style/logo_style"/>
+        android:gravity="top"
+        android:text="@string/logo_name"
+        android:textAlignment="center" />
 
     <!-- Dynamic parts -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:gravity="center_vertical">
+        android:gravity="center_vertical"
+        android:orientation="vertical">
 
         <!-- AlbumArt -->
         <ImageView
+            android:id="@+id/play_albumart"
             android:layout_width="wrap_content"
             android:layout_height="@dimen/albumart_height"
-            android:id="@+id/play_albumart"
-            android:layout_marginBottom="@dimen/albumart_bottom_margin"/>
+            android:layout_marginBottom="@dimen/albumart_bottom_margin" />
 
         <!-- Song info -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:layout_marginBottom="@dimen/songinfo_margin_bottom"
             android:gravity="center"
-            android:layout_marginBottom="@dimen/songinfo_margin_bottom">
+            android:orientation="horizontal">
 
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/play_artist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:textColor="@color/lightText"
-                android:textSize="@dimen/text_songinfo"/>
+                android:textSize="@dimen/text_songinfo" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="@string/song_divider"
                 android:layout_marginLeft="@dimen/song_divider_margin"
                 android:layout_marginRight="@dimen/song_divider_margin"
+                android:text="@string/song_divider"
                 android:textColor="@color/lightText"
-                android:textSize="@dimen/text_songinfo"/>
+                android:textSize="@dimen/text_songinfo" />
 
             <TextView
+                android:id="@+id/play_song"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/play_song"
                 android:textColor="@color/lightText"
-                android:textSize="@dimen/text_songinfo"/>
+                android:textSize="@dimen/text_songinfo" />
 
         </LinearLayout>
 
@@ -83,22 +82,22 @@
             <ImageView
                 android:id="@+id/fast_bacwards"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="@dimen/player_control_height"
+                android:layout_weight="1"
                 android:src="@drawable/fastbackward" />
 
             <ImageView
                 android:id="@+id/play"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="@dimen/player_control_height"
+                android:layout_weight="1"
                 android:src="@drawable/play" />
 
             <ImageView
                 android:id="@+id/fast_forward"
                 android:layout_width="0dp"
-                android:layout_weight="1"
                 android:layout_height="@dimen/player_control_height"
+                android:layout_weight="1"
                 android:src="@drawable/fastforward" />
 
         </LinearLayout>
