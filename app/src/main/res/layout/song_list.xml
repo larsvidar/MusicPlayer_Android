@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:padding="@dimen/songlist_padding">
+
+    <!-- Album thumbnail -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_weight="5"
+        android:src="@drawable/thumb"
+        android:layout_marginRight="@dimen/thumb_right_margin"/>
+
+    <!-- View for artist and song title -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/artist_view"
+            style="@style/playlist_songinfo_style" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/lightText"
+            android:layout_marginLeft="@dimen/song_divider_margin"
+            android:layout_marginRight="@dimen/song_divider_margin"
+            android:textSize="@dimen/text_song_list"
+            android:text="@string/song_divider"/>
+
+        <TextView
+            android:id="@+id/song_title_view"
+            style="@style/playlist_songinfo_style"/>
+
+    </LinearLayout>
+
+</LinearLayout>

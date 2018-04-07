@@ -1,3 +1,10 @@
 <resources>
     <string name="app_name">MusicPlayer</string>
+    <string name="logo_name">MusicPlayer</string>
+    <string name="song_divider"> - </string>
+
+    <!-- Labels -->
+    <string name="main_screen">Playlist</string>
+    <string name="play_screen">Now playing</string>
+
 </resources>
